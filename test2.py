@@ -1,0 +1,10 @@
+arr=[]
+brr=[1,2,3]
+arr.append(brr)
+arr.append(brr)
+arr.append(brr)
+print(arr)
+arr[2][0]=0
+arr[2][1]=0
+arr[2][2]=0
+print(arr)
