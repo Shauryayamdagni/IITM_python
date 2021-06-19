@@ -1,0 +1,31 @@
+Index: week7/week7-grpa-2.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/week7/week7-grpa-2.py b/week7/week7-grpa-2.py
+--- a/week7/week7-grpa-2.py	(revision cc36a5b8278cf39590aa7904c6b9229a39269ad2)
++++ b/week7/week7-grpa-2.py	(date 1624119113947)
+@@ -1,0 +1,19 @@
++def tempdic(l,subject):
++    dict={}
++    for x in range(1,len(l)):
++        dict[subject[x]]=l[x]
++    return dict
++
++
++TEST_CASE=str(input())
++n=int(input())
++line=str(input())
++id_subj=line.split(",")
++students={}
++temp=[]
++for x in range(1,n+1,1):
++    line=str(input())
++    temp=line.split(",")
++    students[x]=tempdic(temp.copy(),id_subj)
++    temp=[]
++print(students)
+\ No newline at end of file
+diff --git a/week7/week7-grpa-3-merge-the-dictionaries.py b/week7/week7-grpa-3-merge-the-dictionaries.py
+new file mode 100644
